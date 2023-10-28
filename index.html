@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <title>Karter Labs</title>
+    <link rel="icon" href="assets/logo_round.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Plus+Jakarta+Sans:wght@600&display=swap" rel="stylesheet">
+    
+    <style>
+        /* For screens wider than 768px */
+        @media (min-width: 768px) {
+            .responsive-image {
+                max-width: 150px;
+                width: 100%;
+                height: auto;
+                /* border: 4px solid #00A6B2;
+                border-radius: 50%; */
+            }
+        }
+
+        /* For screens 768px or narrower */
+        .responsive-image {
+            width: 60%;
+            height: auto;
+            /* border: 4px solid #00A6B2;
+            border-radius: 50%; */
+        }
+
+        @font-face {
+            font-family: 'alliance';
+            src: url('assets/alliance_regular.otf') format('opentype');
+        }
+
+        .font-alliance {
+            font-family: 'alliance', sans-serif;
+        }
+
+        button {
+            /* Variables */
+            --button_radius: 0.75em;
+            --button_color: #FFFFFF;
+            --button_outline_color: #000000;
+            font-size: 17px;
+            font-weight: bold;
+            border: none;
+            border-radius: var(--button_radius);
+            background: var(--button_outline_color);
+          }
+          
+          .button_top {
+            display: block;
+            box-sizing: border-box;
+            border: 2px solid var(--button_outline_color);
+            border-radius: var(--button_radius);
+            padding: 0.75em 1.5em;
+            background: var(--button_color);
+            color: var(--button_outline_color);
+            transform: translateY(-0.2em);
+            transition: transform 0.1s ease;
+          }
+          
+          button:hover .button_top {
+            /* Pull the button upwards when hovered */
+            transform: translateY(-0.33em);
+          }
+          
+          button:active .button_top {
+            /* Push the button downwards when pressed */
+            transform: translateY(0);
+          }
+        
+    </style>
+
+  </head>
+ 
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <div class="flex flex-col justify-center items-center p-10 md:p-20 md:gap-y-20 gap-y-10">
+        <div class="flex flex-col justify-center items-center md:gap-y-5 gap-y-5">
+            <img src="assets/logo_round.png" class="responsive-image">
+            <p class="text-2xl font-alliance font-semibold">Karter Labs</p>
+            <p class="text-lg font-alliance text-center">Job Market Intelligence for high-paying careers!</p>
+            <p class="text-lg font-alliance text-center">For content tailored to your university, check our Instagram accounts below:</p>
+        </div>
+
+        <div class="flex flex-col justify-center items-center gap-y-5">
+
+            <button>
+                <div class="flex flex-row justify-center items-center gap-x-5">
+                    <span class="button_top"> University of Warwick
+                    </span>
+                </div>
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
