@@ -89,7 +89,7 @@
         <div class="flex flex-col justify-center items-center md:gap-y-5 gap-y-5">
             <img src="assets/logo_round.png" class="responsive-image">
             <p class="text-2xl font-alliance font-semibold">Karter Labs</p>
-            <p class="text-lg font-alliance text-center">Job Market Intelligence for high-paying careers! <br/>For content tailored to your university, check our Instagram accounts below:</p>
+            <p class="text-lg font-alliance text-center">Job Market Intelligence for high-paying careers! <br/>For content tailored to your university, check our Instagram accounts below (more to come!):</p>
             <p class="text-lg font-alliance text-center"></p>
         </div>
 
@@ -118,6 +118,33 @@
                     <div class="flex flex-row justify-start items-center gap-x-5">
                         <img src="assets/instagram.svg">
                         <p class="text-left">Imperial College London</p>
+                    </div>
+                </span>
+            </button>
+
+            <button id="cambridge">
+                <span class="button_top">
+                    <div class="flex flex-row justify-start items-center gap-x-5">
+                        <img src="assets/instagram.svg">
+                        <p class="text-left">University of Cambridge</p>
+                    </div>
+                </span>
+            </button>
+
+            <button id="birmingham">
+                <span class="button_top">
+                    <div class="flex flex-row justify-start items-center gap-x-5">
+                        <img src="assets/instagram.svg">
+                        <p class="text-left">University of Birmingham</p>
+                    </div>
+                </span>
+            </button>
+
+            <button id="southampton">
+                <span class="button_top">
+                    <div class="flex flex-row justify-start items-center gap-x-5">
+                        <img src="assets/instagram.svg">
+                        <p class="text-left">University of Southampton</p>
                     </div>
                 </span>
             </button>
@@ -153,6 +180,9 @@
         const warwick = document.getElementById("warwick");
         const ucl = document.getElementById("ucl");
         const imperial = document.getElementById("imperial");
+        const birmingham = document.getElementById("birmingham");
+        const cambridge = document.getElementById("cambridge");
+        const southamtpon = document.getElementById("southamtpon");
 
         // Add click event listeners to the buttons
         warwick.addEventListener("click", function() {
@@ -165,6 +195,18 @@
 
         imperial.addEventListener("click", function() {
             openInstagramAccount("kartericl");
+        });
+
+        birmingham.addEventListener("click", function() {
+            openInstagramAccount("karteruob");
+        });
+
+        cambridge.addEventListener("click", function() {
+            openInstagramAccount("karteruoc");
+        });
+
+        southamtpon.addEventListener("click", function() {
+            openInstagramAccount("karteruos");
         });
     
         function openInstagramAccount(username) {
