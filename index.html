@@ -122,6 +122,15 @@
                 </span>
             </button>
 
+            <button id="kings">
+                <span class="button_top">
+                    <div class="flex flex-row justify-start items-center gap-x-5">
+                        <img src="assets/instagram.svg">
+                        <p class="text-left">King's College London</p>
+                    </div>
+                </span>
+            </button>
+
             <button id="cambridge">
                 <span class="button_top">
                     <div class="flex flex-row justify-start items-center gap-x-5">
@@ -183,6 +192,7 @@
         const birmingham = document.getElementById("birmingham");
         const cambridge = document.getElementById("cambridge");
         const southamtpon = document.getElementById("southamtpon");
+        const kings = document.getElementById("kings");
 
         // Add click event listeners to the buttons
         warwick.addEventListener("click", function() {
@@ -202,11 +212,15 @@
         });
 
         cambridge.addEventListener("click", function() {
-            openInstagramAccount("karteruoc");
+            openInstagramAccount("kartercambridge");
         });
 
         southamtpon.addEventListener("click", function() {
-            openInstagramAccount("karteruos");
+            openInstagramAccount("kartersouthampton");
+        });
+
+        kings.addEventListener("click", function() {
+            openInstagramAccount("karterkings");
         });
     
         function openInstagramAccount(username) {
